@@ -1,0 +1,32 @@
+.features {
+  padding-bottom: 0px;
+}
+.features-list {
+  display: flex;
+}
+
+.features-icon {
+  background: var(--third-background-color);
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.features-item + .features-item {
+  margin-left: 30px;
+}
+
+.features-second-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+
+.features-second-text {
+  line-height: 1.71;
+  color: var(--main-text-color);
+}
