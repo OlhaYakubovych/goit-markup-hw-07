@@ -50,11 +50,10 @@
   line-height: 1.71;
   color: var(--third-title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--main-title-color);
+  &:hover,
+  &:focus {
+    color: var(--main-title-color);
+  }
 }
 
 .footer-second-title {
@@ -94,12 +93,12 @@
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.footer-second-link:hover,
-.footer-second-link:focus {
-  background-color: var(--accent-color);
-}
 .footer-third-container {
   display: block;
   width: 570px;
@@ -134,22 +133,21 @@
   outline: none;
   color: var(--main-title-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: #ffffff;
+  }
+  &:focus::placeholder {
+    color: #ffffff;
+  }
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--third-title-color);
+  }
 }
 
-.footer-third-input:focus {
-  border-color: #ffffff;
-}
-.footer-third-input:focus::placeholder {
-  color: #ffffff;
-}
-
-.footer-third-input::placeholder {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: var(--third-title-color);
-}
 .footer-button-container {
   display: flex;
   justify-content: center;
