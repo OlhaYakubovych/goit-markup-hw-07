@@ -1,10 +1,10 @@
-.btn-list {
+.wrap-btn__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btn-button {
+.wrap-btn__button {
   padding: 6px 22px;
   border-style: none;
 
@@ -29,16 +29,16 @@
   }
 }
 
-.btn-item + .btn-item {
+.wrap-btn__item + .wrap-btn__item {
   margin-left: 8px;
 }
 
-.pic-list {
+.wrap-pic__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.pic-item {
+.wrap-pic__item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
@@ -54,17 +54,17 @@
   &:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
-  &:hover .pic-text-top {
+  &:hover .pic-card__text-top {
     transform: translateY(0);
   }
 }
 
-.pic-item-wrap {
+.pic-card {
   position: relative;
   overflow: hidden;
 }
 
-.pic-text-top {
+.pic-card__text-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +81,7 @@
   color: var(--main-title-color);
 }
 
-.pic-title {
+.pic-card__title {
   margin-top: 20px;
   margin-bottom: 4px;
   margin-left: 24px;
@@ -93,7 +93,7 @@
   color: var(--second-title-color);
 }
 
-.pic-text {
+.pic-card__text {
   margin-bottom: 20px;
   margin-left: 24px;
 

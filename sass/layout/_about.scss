@@ -1,4 +1,4 @@
-.about-title {
+.about__title {
   margin-bottom: 50px;
 
   font-weight: bold;
@@ -7,19 +7,19 @@
   text-align: center;
   color: var(--second-title-color);
 }
-.about-list {
+.about__list {
   display: flex;
 }
 
-.about-item + .about-item {
+.about__item + .about__item {
   margin-left: 30px;
 }
 
-.about-item-div {
+.about__wrap {
   position: relative;
 }
 
-.about-item-text {
+.about__text {
   position: absolute;
   bottom: 0;
   padding-top: 27px;

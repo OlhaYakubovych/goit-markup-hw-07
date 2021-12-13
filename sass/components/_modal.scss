@@ -31,7 +31,7 @@
   transition: transform 550ms;
 }
 
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   background: transparent;
@@ -46,12 +46,12 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal__close-icon:hover,
+.modal__close-icon:focus {
   fill: var(--accent-color);
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
 
   font-weight: bold;
@@ -62,12 +62,12 @@
   color: var(--second-title-color);
 }
 
-.modal-field {
+.modal__field {
   margin-bottom: 10px;
   outline: none;
 }
 
-.form-input-text {
+.modal__field-text {
   margin-bottom: 4px;
   display: block;
   font-weight: normal;
@@ -77,7 +77,7 @@
   color: var(--main-text-color);
 }
 
-.modal-form-input {
+.modal__field-input {
   padding-left: 42px;
   padding-right: 42px;
   outline: none;
@@ -99,11 +99,11 @@
   }
 }
 
-.modal-field-coment {
+.field-coment {
   margin-bottom: 20px;
 }
 
-.modal-field-text {
+.field-coment__text {
   width: 100%;
   height: 118px;
   resize: none;
@@ -124,28 +124,28 @@
   }
 }
 
-.input-wrap {
+.modal__field-wrap {
   position: relative;
 }
 
-.input-icon {
+.modal__field-icon {
   position: absolute;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .modal-form-input:focus + & {
+  .modal__field-input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-btn {
+.modal__btn {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  /*border-radius: 4px;
   cursor: pointer;
   min-width: 200px;
   min-height: 50px;
@@ -154,22 +154,22 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--main-btn-color);
+  color: var(--main-btn-color);*/
   border: none;
 }
 
-.modal-field-policy {
+.modal__policy {
   margin-left: 13px;
 }
 
-.modal-check:checked + .check-text {
-  .check-item {
+.modal__policy-check:checked + .policy-check__text {
+  .policy-check__item {
     background-color: var(--accent-color);
     border: none;
   }
 }
 
-.check-text {
+.policy-check__text {
   display: flex;
   align-items: center;
   font-weight: normal;
@@ -179,7 +179,9 @@
   color: var(--main-text-color);
 }
 
-.policy-agreement {
+.policy-check__agreement {
+  margin-left: 5px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -187,7 +189,7 @@
   color: var(--accent-color);
 }
 
-.check-item {
+.policy-check__item {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -196,10 +198,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.policy-agreement {
-  margin-left: 5px;
 }
 
 .is-hidden {

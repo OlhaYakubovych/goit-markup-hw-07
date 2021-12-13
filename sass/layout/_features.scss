@@ -1,22 +1,22 @@
 .features {
   padding-bottom: 0px;
 }
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-icon {
+.features__icon {
   background: var(--third-background-color);
   border-radius: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.features-item + .features-item {
+.features__item + .features__item {
   margin-left: 30px;
 }
 
-.features-second-title {
+.features__title {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -26,7 +26,7 @@
   color: var(--second-title-color);
 }
 
-.features-second-text {
+.features__text {
   line-height: 1.71;
   color: var(--main-text-color);
 }
